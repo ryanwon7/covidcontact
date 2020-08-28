@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% set active = "Location" %}
+
+{% block title %}
+Location Upload
+{% endblock %}
+
+{% block content %}
+
+<section class="jumbotron">
+    <div class="text-center">
+        <h1 class="jumbotron-heading">Location Upload</h1>
+        <p class="lead text-muted">Let others know where you visited while you were infected.</p>
+    </div>
+</section>
+
+<section class = "tracetable" id="traceadd">
+	<h5>This part of COVID Contact is meant to be used by those who are infected with COVID-19. This is to help others know whether they have been in contact with you while you were infected.</h5>
+	<br>
+	<p>Enter your name, and all the locations you have visited in the last two weeks as well as the dates you visited those locations to let people know where you have been while you had COVID-19. Click "Add Another Visited Location" to add another row of a location and a date that you have visited. Click "Add a Location to Location List" to add a new location to the list of available locations. Click "Submit your Visited Locations" to send your information to our database of visited locations and those infected with COVID-19.</p>
+	<div id="btn-wrapper">
+  		<label for="fname">First Name:</label>
+		<input type="text" id="fname" style="width: 25%;">
+  		<label for="lname" style="padding-left: 4em;">Last Name:</label>
+		<input type="text" id="lname" style="width: 25%;">
+	</div>
+	<br>
+	<table id="contacttrace">
+		<tr>
+			<th>Location Visited</th>
+			<th>Date of Visit</th>
+		</tr>
+		<tr>
+			<td>Location: <select name="activity" id="activity1"><option value="0" disabled selected>--Select--</option></select></td>
+			<td>Date: <input type="date" id="datepick1"></td>
+		</tr>
+		<tr>
+			<td>Location: <select name="activity" id="activity2"><option value="0" disabled selected>--Select--</option></select></td>
+			<td>Date: <input type="date" id="datepick2"></td>
+		</tr>
+		<tr>
+			<td>Location: <select name="activity" id="activity3"><option value="0" disabled selected>--Select--</option></select></td>
+			<td>Date: <input type="date" id="datepick3"></td>
+		</tr>
+	</table>
+	<br>
+	<div id="btn-wrapper">
+		<button type="button" onclick="addRow()">Add Another Visited Location</button>
+		<button type="button" onclick="addLocation()">Add a Location to Location List</button>
+		<button type="button" onclick="upload()">Upload your Visited Locations</button>
+	</div>
+</section>
+
+<section id="result" style="display:none;">
+	<h2>Location Upload Results</h2>
+	<p>Thank you for uploading your status and letting us know where you have been while you were positive with COVID-19! Please continue to quarantine yourself and stay safe.</p>
+	<br>
+	<p>For more information on the coronavirus, and how to fight against it, visit our COVID-19 Information page here: <a href="/about">COVID-19 INFORMATION</a>.</p>
+</section>
+<script src="js/tracing.js"></script>
+{% endblock %}

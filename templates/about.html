@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% set active = "About" %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+
+<section class="jumbotron">
+    <div class="text-center">
+        <h1 class="jumbotron-heading">COVID-19 Information</h1>
+        <p class="lead text-muted">Best practices and information regarding COVID-19 safety and precautions.</p>
+    </div>
+</section>
+
+<section id="aboutinfo">
+	Navigate to the following sections:
+	<a href="#symptoms">COVID-19 SYMPTOMS</a>
+	|
+	<a href="#avoidance">PROTECTION FROM COVID-19</a>
+	|
+	<a href="#sick">WHAT TO DO WHEN SICK</a>
+	<hr>
+	<div id="symptoms">
+		<h2>COVID-19 Symptoms</h2>
+		<h4>Common COVID-19 Symptoms</h4>
+		<img src="resources/flyer2.png" style="float: right; margin: 10px;width:50%;">
+		<p>The following are some of the common symptoms for COVID-19. These all range from mild symptoms to severe illness, and having one or more of these symptoms may not neccesarily indicate that you have COVID-19. Please also keep in mind that symptoms may appear 2-14 days after exposure to the virus.</p>
+		<u1>
+			<li>Fever or chills</li>
+			<li>Cough</li>
+			<li>Shortness of breath or difficulty breathing</li>
+			<li>Fatigue</li>
+			<li>Muscle or body aches</li>
+			<li>Headache</li>
+			<li>New loss of taste or smell</li>
+			<li>Sore throat</li>
+			<li>Congestion or runny nose</li>
+			<li>Nausea or vomiting</li>
+			<li>Diarrhea</li>
+		</u1>
+		<br>
+		<h4>Severe COVID-19 Symptoms</h4>
+		<p>The following are extremely sever symptoms for COVID-19. If you or another person are showing any of these signs, seek medical attention immediately. Call 911 or your local emergency facility as these symptoms are a direct indication of COVID-19 or another life threatening medical condition.</p>
+		<u1>
+			<li>Trouble breathing</li>
+			<li>Persistent pain or pressure in the chest</li>
+			<li>New confusion</li>
+			<li>Inability to wake or stay awake</li>
+			<li>Bluish lips or face</li>
+		</u1>
+		<p> Please also remember that this does not encompass all possible symptoms of COVID-19. Please call your medical provider for any other symptoms that are severe or concerning to you.</p>
+		<p> If you have symptoms and are unsure if you should contact medical providers or get a COVID-19 test, take our symptom analyzer here: <a href="symptom"> SYMPTOM ANALYSIS</a> which will recommend the best course of action.</p>
+	</div>
+	<hr>
+	<div id="avoidance">
+		<h2>Protect yourself from COVID-19</h2>
+		<h4>How It Spreads</h4>
+		<p>There currently is no vaccine to prevent COVID-19. Thefore, the best way to prevent illness is to avoid exposure to the virus. The virus spreads mostly person to person in the below manners:</p>
+		<u1>
+			<li>Between people who are in close contact with one another (within about 6 feet).</li>
+			<li>Through respiratory droplets produced when an infected person coughs, sneezes or talks.</li>
+			<li>These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</li>
+			<li>Some recent studies have suggested that COVID-19 may be spread by people who are not showing symptoms.</li>
+		</u1>
+		<br>
+		<h4>Recommended Courses of Action</h4>
+		<img src="resources/flyer1.png" style="float: right; margin: 10px;width:50%;">
+		<h5>Wash your Hands Often</h5>
+		<u1>
+			<li>Wash your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
+			<li>It’s especially important to wash before eating food, before touching your face, after using the restroom, after leaving a public place, after sneezing or coughing, after handling your mask, after caring for someone sick, and after touching animals.</li>
+			<li>If soap and water are not readily available, USE A HAND SANITIZER THAT CONTAINS AT LEAST 60% ALCOHOL. Cover all surfaces of your hands and rub them together until they feel dry.</li>
+			<li>AVOID TOUCHING YOUR EYES, NOSE, AND MOUTH with unwashed hands.</li>
+		</u1>
+		<br>
+		<h5>Avoid Close Contact</h5>
+		<u1>
+			<li>inside your home: Avoid close contact with people who are sick. If possible, maintain 6 feet between the person who is sick and other household members.</li>
+			<li>Outside your home: Put 6 feet of distance between yourself and people who don’t live in your household. Remember that some people without symptoms may be able to spread virus. Stay at least 6 feet (about 2 arms’ length) from other people. Keeping distance from others is especially important for people who are at higher risk of getting very sick.</li>
+		</u1>
+		<br>
+		<h5>Cover your mouth and nose with a mask when around others</h5>
+		<u1>
+			<li>You could spread COVID-19 to others even if you do not feel sick.</li>
+			<li>The mask is meant to protect other people in case you are infected.</li>
+			<li>Everyone should wear a mask in public settings and when around people who don’t live in your household, especially when other social distancing measures are difficult to maintain.</li>
+			<li>Do NOT use a mask meant for a healthcare worker. Currently, surgical masks and N95 respirators are critical supplies that should be reserved for healthcare workers and other first responders.</li>
+			<li>Continue to keep about 6 feet between yourself and others. The mask is not a substitute for social distancing.</li>
+		</u1>
+		<br>
+		<h5>Cover coughs and sneezes</h5>
+		<u1>
+			<li>Always cover your mouth and nose with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li>
+			<li>Throw used tissues in the trash.</li>
+			<li>Immediately wash your hands with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
+		</u1>
+		<br>
+		<h5>Clean and disinfect</h5>
+		<u1>
+			<li>Clean AND disinfect frequently touched surfaces daily. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.</li>
+			<li>If surfaces are dirty, clean them. Use detergent or soap and water prior to disinfection.</li>
+			<li>Then, use a household disinfectant. Most common EPA-registered household disinfectants will work.</li>
+		</u1>
+		<br>
+		<h5>Monitor Your Health Daily</h5>
+		<u1>
+			<li>Be alert for symptoms. Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.</li>
+			<li>Take your temperature if symptoms develop.</li>
+			<li>Follow the steps in "What to do when sick" or take our symptom analyzer if symptoms develop.</li>
+		</u1>
+	</div>
+	<hr>
+	<div id="sick">
+		<h2>What to do When Infected</h2>
+		<p>If you are sick with COVID-19 or think you may have it, follow the steps below to care for yourself and to help protect others from getting infected. If at any time you have some of the SEVERE SYMPTOMS listed for COVID-19, contact or seek medical care immediately.</p>
+		<img src="resources/figure3.png" style="float: right; margin: 10px;width:50%;">
+		<h5>Stay Home Except to Get Medical Care</h5>
+		<u1>
+			<li>Stay home. Most people with COVID-19 have mild illness and can recover at home without medical care. Do not leave your home, except to get medical care. Do not visit public areas.</li>
+			<li>Take care of yourself. Get rest and stay hydrated. Take over-the-counter medicines, such as acetaminophen, to help you feel better.</li>
+			<li>Stay in touch with your doctor. Call before you get medical care. Be sure to get care if you have trouble breathing, or have any other emergency warning signs, or if you think it is an emergency.</li>
+			<li>Avoid public transportation, ride-sharing, or taxis.</li>
+		</u1>
+		<br>
+		<h5>Separate Yourself from Other People</h5>
+		<u1>
+			<li>As much as possible, stay in a specific room and away from other people and pets in your home. If possible, you should use a separate bathroom. If you need to be around other people or animals in or outside of the home, wear a mask.</li>
+		</u1>
+		<br>
+		<h5>Monitor your Symptoms</h5>
+		<u1>
+			<li>Symptoms of COVID-19 include fever, cough, or other symptoms.</li>
+			<li>Follow care instructions from your healthcare provider and local health department. Your local health authorities may give instructions on checking your symptoms and reporting information.</li>
+		</u1>
+		<br>
+		<h5>Call Ahead Before Visiting your Doctor</h5>
+		<u1>
+			<li>Call ahead. Many medical visits for routine care are being postponed or done by phone or telemedicine.</li>
+			<li>If you have a medical appointment that cannot be postponed, call your doctor’s office, and tell them you have or may have COVID-19. This will help the office protect themselves and other patients.</li>
+		</u1>
+		<br>
+		<h5>If you are Sick, Wear a Mask over Your Nose and Mouth</h5>
+		<u1>
+			<li>You should wear a mask over your nose and mouth if you must be around other people or animals, including pets (even at home).</li>
+			<li>You don’t need to wear the mask if you are alone. If you can’t put on a mask (because of trouble breathing, for example), cover your coughs and sneezes in some other way. Try to stay at least 6 feet away from other people. This will help protect the people around you.</li>
+			<li>Masks should not be placed on young children under age 2 years, anyone who has trouble breathing, or anyone who is not able to remove the mask without help.</li>
+		</u1>
+		<br>
+		<h5>Cover coughs and sneezes</h5>
+		<u1>
+			<li>Always cover your mouth and nose with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li>
+			<li>Throw used tissues in the trash.</li>
+			<li>Immediately wash your hands with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
+		</u1>
+		<br>
+		<h5>Wash your Hands Often</h5>
+		<u1>
+			<li>Wash your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
+			<li>It’s especially important to wash before eating food, before touching your face, after using the restroom, after leaving a public place, after sneezing or coughing, after handling your mask, after caring for someone sick, and after touching animals.</li>
+			<li>If soap and water are not readily available, USE A HAND SANITIZER THAT CONTAINS AT LEAST 60% ALCOHOL. Cover all surfaces of your hands and rub them together until they feel dry.</li>
+			<li>AVOID TOUCHING YOUR EYES, NOSE, AND MOUTH with unwashed hands.</li>
+		</u1>
+		<br>
+		<h5>Avoid Sharing Personal Household Items</h5>
+		<u1>
+			<li>Do not share dishes, drinking glasses, cups, eating utensils, towels, or bedding with other people in your home.</li>
+			<li>Wash these items thoroughly after using them with soap and water or put in the dishwasher.</li>
+		</u1>
+		<br>
+		<h5>Clean All “high-touch” Surfaces Everyday</h5>
+		<u1>
+			<li>Clean and disinfect high-touch surfaces in your “sick room” and bathroom; wear disposable gloves. Let someone else clean and disinfect surfaces in common areas, but you should clean your bedroom and bathroom, if possible.</li>
+			<li>If a caregiver or other person needs to clean and disinfect a sick person’s bedroom or bathroom, they should do so on an as-needed basis. The caregiver/other person should wear a mask and disposable gloves prior to cleaning. They should wait as long as possible after the person who is sick has used the bathroom before coming in to clean and use the bathroom.</li>
+			<li>Clean and disinfect areas that may have blood, stool, or body fluids on them.</li>
+			<li>Use household cleaners and disinfectants. Clean the area or item with soap and water or another detergent if it is dirty. Then, use a household disinfectant.</li>
+		</u1>
+		<br>
+		<hr>
+		<p>Information and graphics are sourced from <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2Findex.html">cdc.gov/coronavirus.</a></p>
+	</div>
+</section>
+
+{% endblock %}

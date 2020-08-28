@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% set active = "Analysis" %}
+
+{% block title %}
+Symptom Analysis
+{% endblock %}
+
+{% block content %}
+
+<section class="jumbotron">
+    <div class="text-center">
+        <h1 class="jumbotron-heading">Symptom Analysis</h1>
+        <p class="lead text-muted">Check to see if your symptoms match those of COVID-19s.</p>
+    </div>
+</section>
+
+<section class="containerform" id="form">
+	<div class="form-outer">
+        <form action="#">
+          	<div class="page slide-page">
+            	<div class="title">Basic Information:</div>
+            	<div class="field">
+            		<div class="label">Age Range</div>
+            		<select required id="age">
+            			<option disabled selected value="4"> -- select an option -- </option>
+		                <option value="0">10-19 years</option>
+		                <option value="1">20-29 years</option>
+		                <option value="1">30-39 years</option>
+		                <option value="2">40-49 years</option>
+		                <option value="2">50-59 years</option>
+		                <option value="3">60-69 years</option>
+		                <option value="3">70+ years</option>
+		             </select>
+            	</div>
+            	<div class="field" >
+            		<div class="label">Do you currently live in a nursing home or long term care facility?</div>
+            		<select required id="home">
+            			<option disabled selected value="2"> -- select an option -- </option>
+		                <option value="0">Yes</option>
+		                <option value="1">No</option>
+		             </select>
+            	</div>
+				<div class="field">
+              		<button class="firstNext next">Next</button>
+            	</div>
+			</div>
+			<div class="page">
+	            <div class="title">Basic Symptoms:<br>Please indicate which of the following symptoms you are experiencing.</div>
+	            <div class="field">
+	            	<div class="label">Fever or Chills</div>
+            		<select required id="fever">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Cough</div>
+            		<select required id="cough">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Shortness of breath or Difficulty breathing</div>
+            		<select required id="short">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Fatigue</div>
+            		<select required id="fat">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Muscle of body aches</div>
+            		<select required id="mus">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Headache</div>
+            		<select required id="head">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Loss of taste or smell</div>
+            		<select required id="loss">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Sore Throat</div>
+            		<select required id="sore">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Congestion or Runny nose</div>
+            		<select required id="cong">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Nausea or Vomiting</div>
+            		<select required  id="naus">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Diarrhea</div>
+            		<select required id="dia">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Other Symptoms</div>
+            		<select required id="other">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+				<div class="field btns">
+	                <button class="prev-1 prev">Previous</button>
+	                <button class="next-1 next">Next</button>
+	            </div>
+	        </div>
+	        <div class="page">
+	            <div class="title">Severe Symptoms:<br>Please indicate if you are experiencing any of the following symptoms.</div>
+	            <div class="field">
+	            	<div class="label">Bluish lips or face</div>
+            		<select required id="severe7">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Severe and constant pain or pressure in the chest</div>
+            		<select required id="severe0">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Extreme difficulty breathing (such as gasping for air or being unable to talk without catching your breath)</div>
+            		<select required id="severe1">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Severe and constant dizziness or lightheadedness</div>
+            		<select required id="severe2">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Serious disorientation (acting confused)</div>
+            		<select required id="severe3">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Slurred speech or difficulty speaking (new or worsening)</div>
+            		<select required id="severe4">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Seizures</div>
+            		<select required id="severe5">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+	            <div class="field">
+	            	<div class="label">Signs of low blood pressure (too weak to stand, light headed, feeling cold, pale, clammy skin)</div>
+            		<select required id="severe6">
+		                <option value="0">Yes</option>
+		                <option selected value="1">No</option>
+		             </select>
+	            </div>
+				<div class="field btns">
+	                <button class="prev-2 prev">Previous</button>
+	                <button class="next-2 next">Next</button>
+	            </div>
+	        </div>
+	        <div class="page">
+	        	<div class="title">Exposure:</div>
+            	<div class="field">
+            		<div class="label">Have you been in contact with anyone diagnosed with COVID-19 within the past two weeks?</div>
+            		<select required id="contact">
+            			<option disabled selected value="2"> -- select an option -- </option>
+		                <option value="0">Yes</option>
+		                <option value="1">No</option>
+		             </select>
+            	</div>
+            	<div class="field">
+            		<div class="label">Have you worked or volunteered in a healthcare facility or as a medical responder within the past two weeks?</div>
+            		<select required id="med">
+            			<option disabled selected value="2"> -- select an option -- </option>
+		                <option value="0">Yes</option>
+		                <option value="1">No</option>
+		             </select>
+            	</div>
+	        	<div class="field btns">
+		            <button class="prev-3 prev">Previous</button>
+		            <button class="submit">Submit</button>
+		        </div>
+		    </div>
+		</form>
+	</div>
+</section>
+
+<section class="testresult" id="result" style="display:none;">
+</section>
+<script src="/js/testresult.js"></script>
+{% endblock %}
+

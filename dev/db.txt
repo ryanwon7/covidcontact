@@ -1,0 +1,28 @@
+
+sqlite3 covidcontact.db
+
+CREATE TABLE locations (
+ uid INTEGER PRIMARY KEY,
+ location TEXT
+);
+
+CREATE TABLE users (
+ uid INTEGER PRIMARY KEY,
+ firstname TEXT,
+ lastname TEXT
+);
+
+CREATE TABLE tracedata (
+ uid INTEGER PRIMARY KEY,
+ firstname TEXT,
+ lastname TEXT,
+ positive TEXT,
+ location TEXT,
+ date TEXT
+ );
+
+
+.mode csv
+.import dev/locations.csv locations
+.import dev/users.csv users
+.import dev/tracedata.csv tracedata

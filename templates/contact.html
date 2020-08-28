@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% set active = "Contact" %}
+
+{% block title %}
+Contact Tracing
+{% endblock %}
+
+{% block content %}
+
+<section class="jumbotron">
+    <div class="text-center">
+        <h1 class="jumbotron-heading">Contact Tracing</h1>
+        <p class="lead text-muted">Find out if you have been exposed to COVID-19 based on the locations you've traveled to.</p>
+    </div>
+</section>
+
+<section class = "tracetable" id="traceadd">
+	<p>Enter your name, and all the locations you have visited in the last two weeks as well as the dates you visited those locations to see if you have been in contact with anyone diagnosed with COVID-19. Click "Add Another Visited Location" to add another row of a location and a date that you have visited. Click "Add a Location to Location List" to add a new location to the list of available locations. Click "Submit your Visited Locations" to see if you have been in contact with anyone who has been diagnosed with COVID-19.</p>
+	<div id="btn-wrapper">
+  		<label for="fname">First Name:</label>
+		<input type="text" id="fname" style="width: 25%;">
+  		<label for="lname" style="padding-left: 4em;">Last Name:</label>
+		<input type="text" id="lname" style="width: 25%;">
+	</div>
+	<br>
+	<table id="contacttrace">
+		<tr>
+			<th>Location Visited</th>
+			<th>Date of Visit</th>
+		</tr>
+		<tr>
+			<td>Location: <select name="activity" id="activity1"><option value="0" disabled selected>--Select--</option></select></td>
+			<td>Date: <input type="date" id="datepick1"></td>
+		</tr>
+		<tr>
+			<td>Location: <select name="activity" id="activity2"><option value="0" disabled selected>--Select--</option></select></td>
+			<td>Date: <input type="date" id="datepick2"></td>
+		</tr>
+		<tr>
+			<td>Location: <select name="activity" id="activity3"><option value="0" disabled selected>--Select--</option></select></td>
+			<td>Date: <input type="date" id="datepick3"></td>
+		</tr>
+	</table>
+	<br>
+	<div id="btn-wrapper">
+		<button type="button" onclick="addRow()">Add Another Visited Location</button>
+		<button type="button" onclick="addLocation()">Add a Location to Location List</button>
+		<button type="button" onclick="submit()">Submit your Visited Locations</button>
+	</div>
+</section>
+
+<section id="result" style="display:none;">
+</section>
+<script src="js/tracing.js"></script>
+{% endblock %}
